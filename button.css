@@ -1,3 +1,17 @@
+.TCity{
+  display: inline-block;
+  background-color: red;
+  padding: 5px;
+  border: solid 2px red;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.TCity:hover{
+  background-color: white;
+  color: red;
+}
 .City{
   display: inline-block;
   background-color: orange;
