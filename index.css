@@ -1,14 +1,111 @@
-.Button{
-  display: inline-block;
-  background-color: #000000;
-  padding: 5px;
-  border: solid 2px #000000;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.Button:hover{
-  background-color: white;
-  color: #000000;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fb; /* 明るい背景色 */
+            margin: 0;
+            padding: 1rem; /* モバイルデフォルトパディング */
+        }
+
+        /* 640px以上でパディングを広げる */
+        @media (min-width: 640px) {
+            body {
+                padding: 2rem;
+            }
+        }
+
+        /*
+        ==================================================
+        コンテナとヘッダー
+        ==================================================
+        */
+        .container {
+            max-width: 1280px; /* 最大幅の指定 */
+            margin: 0 auto; /* 中央寄せ */
+        }
+
+        .h1 {
+            font-size: 1.875rem; /* H1サイズ */
+            font-weight: 700; /* 太字 */
+            color: #1f2937;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* 640px以上でテキストを左寄せ */
+        @media (min-width: 640px) {
+            .h1, .subtitle {
+                text-align: left;
+            }
+        }
+
+        /*
+        ==================================================
+        グリッドレイアウト (都道府県ボタン)
+        ==================================================
+        */
+        .grid-container {
+            display: grid;
+            gap: 0.75rem; /* ボタン間の間隔 */
+            /* デフォルト（モバイル）：2列 */
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* 640px以上で3列 */
+        @media (min-width: 640px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* 768px以上で4列 */
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* 1024px以上で6列 */
+        @media (min-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(6, 1fr);
+            }
+        }
+
+        /*
+        ==================================================
+        ボタン（アンカータグ）スタイル
+        ==================================================
+        */
+        .Button {
+            display: block; /* グリッド内でブロック要素として振る舞う */
+            text-decoration: none;
+            text-align: center;
+            font-weight: 500;
+            white-space: nowrap;
+            
+            /* サイズと角丸 */
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            
+            /* 初期カラー: インディゴ */
+            border: 1px solid #4f46e5;
+            background-color: #4f46e5;
+            color: white;
+
+            /* ホバー遷移アニメーション */
+            transition: all 0.3s ease;
+        }
+
+        .Button:hover {
+            /* ホバー時の反転カラー */
+            background-color: white;
+            color: #4f46e5;
+            
+            /* ホバー時の影 */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
