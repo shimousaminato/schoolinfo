@@ -81,7 +81,7 @@
         ボタン（アンカータグ）スタイル
         ==================================================
         */
-        .Button {
+        .button {
             display: block; /* グリッド内でブロック要素として振る舞う */
             text-decoration: none;
             text-align: center;
@@ -101,7 +101,7 @@
             transition: all 0.3s ease;
         }
 
-        .Button:hover {
+        .button:hover {
             /* ホバー時の反転カラー */
             background-color: white;
             color: #4f46e5;
