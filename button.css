@@ -42,7 +42,7 @@
 
         /*
         ==================================================
-        グリッドレイアウト (変更なし)
+        グリッドレイアウト
         ==================================================
         */
         .grid-container {
@@ -71,14 +71,12 @@
 
         /*
         ==================================================
-        市町村区クラスごとのスタイル定義
-        (元のクラスに、ボタンの共通プロパティを直接組み込み)
+        市町村区クラスごとのスタイル定義（共通スタイルを個別に埋め込み）
         ==================================================
         */
         
-        /* TCity: 赤 */
+        /* TCity: 赤 (共通スタイル + 固有色) */
         .TCity {
-            /* ボタン共通プロパティ */
             display: block; 
             text-align: center;
             padding: 8px 10px;
@@ -90,7 +88,6 @@
             white-space: nowrap;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-            /* TCity固有の色 */
             background-color: red;
             border: solid 2px red;
         }
@@ -100,9 +97,8 @@
             box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
         }
 
-        /* City: オレンジ */
+        /* City: オレンジ (共通スタイル + 固有色) */
         .City {
-            /* ボタン共通プロパティ */
             display: block; 
             text-align: center;
             padding: 8px 10px;
@@ -114,7 +110,6 @@
             white-space: nowrap;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             
-            /* City固有の色 */
             background-color: orange;
             border: solid 2px orange;
         }
@@ -124,9 +119,8 @@
             box-shadow: 0 4px 6px rgba(255, 165, 0, 0.3);
         }
 
-        /* Ward: マゼンタ */
+        /* Ward: マゼンタ (共通スタイル + 固有色) */
         .Ward {
-            /* ボタン共通プロパティ */
             display: block; 
             text-align: center;
             padding: 8px 10px;
@@ -138,7 +132,6 @@
             white-space: nowrap;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-            /* Ward固有の色 */
             background-color: magenta;
             border: solid 2px magenta;
         }
@@ -148,9 +141,8 @@
             box-shadow: 0 4px 6px rgba(255, 0, 255, 0.3);
         }
 
-        /* Town: 緑 */
+        /* Town: 緑 (共通スタイル + 固有色) */
         .Town {
-            /* ボタン共通プロパティ */
             display: block; 
             text-align: center;
             padding: 8px 10px;
@@ -162,7 +154,6 @@
             white-space: nowrap;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-            /* Town固有の色 */
             background-color: green;
             border: solid 2px green;
         }
@@ -172,9 +163,8 @@
             box-shadow: 0 4px 6px rgba(0, 128, 0, 0.3);
         }
 
-        /* Vill: ディープスカイブルー */
+        /* Vill: ディープスカイブルー (共通スタイル + 固有色) */
         .Vill {
-            /* ボタン共通プロパティ */
             display: block; 
             text-align: center;
             padding: 8px 10px;
@@ -186,7 +176,6 @@
             white-space: nowrap;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-            /* Vill固有の色 */
             background-color: deepskyblue;
             border: solid 2px deepskyblue;
         }
